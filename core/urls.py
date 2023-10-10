@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from home.views import *
+from home.views import *    
 from vege.views import *
 
 urlpatterns = [
@@ -26,7 +26,8 @@ urlpatterns = [
     path('contact/',contact,name='contact'),
     path('about/',about,name='about'),
     path('receipe/',receipe,name='receipes'),
-    path('delete-receipe/<id>/', delete_receipe, name='delete_receipes')
+    path('delete-receipe/<id>/', delete_receipe, name='delete_receipes'),
+    path('update-receipe/<id>/', update_receipe, name='update_receipes')
 ]
 
 
